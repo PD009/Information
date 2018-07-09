@@ -9,14 +9,14 @@ router.post('/demo', function (req, res) {
     var email = req.queryResult.email_add;
     var aadhar = req.queryResult.aadhar;
     */
-    var userName = req.queryResult.parameters.param.username;
-    var phoneNo = req.queryResult.parameters.param.phone_no;
-    var email = req.queryResult.parameters.param.email_add;
-    var aadhar = req.queryResult.parameters.param.aadhar;
-
+    var userName = req.body.username;
+    var phoneNo = req.body.phone_no;
+    var email = req.body.email_add;
+    var aadhar = req.body.aadhar;
+    console.log("request params", req)
     return res.json({
-        text : "Nice to know your details"
-    })
-});
-
-module.exports = router;
+        speech : "Nice to know your details"
+    });
+    restService.listen(process.env.PORT || 3000, function() {
+        console.log("Server up and listening");
+      });
