@@ -10,13 +10,14 @@ router.post('/demo', function (req, res) {
     var aadhar = req.queryResult.aadhar;
     */
     
-    /*var userName = req.body.queryResult.queryText.parameters.username;
-    var phoneNo = req.body.queryResult.parameters.phone_no;
-    var email = req.body.queryResult.parameters.email_add;
-    var aadhar = req.body.queryResult.parameters.aadhar;
+    var userName = req.body;
+    console.log(userName)
+   /* var phoneNo = req.body;
+    var email = req.body.email_add;
+    var aadhar = req.body.aadhar;
     console.log("request params", req)*/
     return res.json({
-        text:{text:"Nice to know your details"}     
+        fulfillmentText:"Nice to know your details"     
      });
     restService.listen(process.env.PORT || 3000, function() {
         console.log("Server up and listening");
