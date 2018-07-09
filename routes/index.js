@@ -10,8 +10,8 @@ router.post('/demo', function (req, res) {
     var aadhar = req.queryResult.aadhar;
     */
     
-    var userName = req.body.queryResult.queryText.parameters.username;
-    /*var phoneNo = req.body.queryResult.parameters.phone_no;
+    /*var userName = req.body.queryResult.queryText.parameters.username;
+    var phoneNo = req.body.queryResult.parameters.phone_no;
     var email = req.body.queryResult.parameters.email_add;
     var aadhar = req.body.queryResult.parameters.aadhar;
     console.log("request params", req)*/
