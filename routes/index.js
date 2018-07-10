@@ -17,7 +17,7 @@ router.post('/demo', function (req, res) {
     var aadhar = req.body.aadhar;
     console.log("request params", req)*/
     return res.json({
-        fulfillmentText:"Nice to know your details";
+        fulfillmentText:"Nice to know your details"
      });
     });
     
