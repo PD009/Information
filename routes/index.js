@@ -19,7 +19,7 @@ router.post('/demo', function (req, res) {
     return res.json({
         fulfillmentText:"Nice to know your details"
      });
-    )};
+    });
     restService.listen(process.env.PORT || 3000, function() {
         console.log("Server up and listening");
     )}
