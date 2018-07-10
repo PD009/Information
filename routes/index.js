@@ -22,7 +22,7 @@ router.post('/demo', function (req, res) {
     });
     restService.listen(process.env.PORT || 3000, function() {
         console.log("Server up and listening");
-    )}
+    });
     
 
 
