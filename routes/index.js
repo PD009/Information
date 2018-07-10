@@ -13,7 +13,7 @@ restService.use(
   );
   restService.use(bodyParser.json());
 /* GET home page. */
-restService.use(bodyParser.json());.post('/demo', function (req, res) {
+restService.post('/demo', function (req, res) {
     /*var userName = req.queryResult.username;
     var phoneNo = req.queryResult.phone_no;
     var email = req.queryResult.email_add;
