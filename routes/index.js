@@ -1,6 +1,6 @@
 ﻿'use strict';
 var express = require('express');
-var router = express.Router();
+var router = express();
 
 /* GET home page. */
 router.post('/demo', function (req, res) {
