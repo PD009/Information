@@ -1,9 +1,19 @@
 ﻿'use strict';
 var express = require('express');
 var router = express.Router();
+const bodyParser = require("body-parser");
 
+//var pg = require("pg");
+const restService = express();
+
+restService.use(
+    bodyParser.urlencoded({
+      extended: true
+    })
+  );
+  restService.use(bodyParser.json());
 /* GET home page. */
-router.post('/demo', function (req, res) {
+restService.use(bodyParser.json());.post('/demo', function (req, res) {
     /*var userName = req.queryResult.username;
     var phoneNo = req.queryResult.phone_no;
     var email = req.queryResult.email_add;
