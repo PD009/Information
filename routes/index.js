@@ -20,6 +20,7 @@ router.post('/demo', function (req, res) {
         fulfillmentText:"Nice to know your details"
      });
     });
+    module.exports = router;
     
 
 
